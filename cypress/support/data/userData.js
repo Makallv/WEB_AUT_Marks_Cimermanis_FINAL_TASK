@@ -6,7 +6,7 @@ class UserData {
     this.lastName = faker.person.lastName();
     this.email = faker.internet.email();
     this.password = faker.internet.password();
-    this.phone = faker.phone.number();
+    this.phone = faker.phone.number('##########');
 
   }
 }

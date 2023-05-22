@@ -43,7 +43,7 @@ class FormPage extends BasePage{
     }
 
     static get registerButton(){
-        return cy.get("#submit")
+        return cy.get("[class=\"btn btn-primary\"]")
     }
 
     static get gender(){
