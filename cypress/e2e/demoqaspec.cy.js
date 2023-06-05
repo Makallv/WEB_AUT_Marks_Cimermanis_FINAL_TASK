@@ -20,7 +20,7 @@ describe('Demoqa exam', () => {
     FormPage.email.type(data.userData.email)
     FormPage.email.should('have.value', data.userData.email)
     FormPage.gender.should('be.visible')
-    FormPage.gender.contains('Male').click()
+    FormPage.gender.contains(data.userData.gender).click()
     FormPage.phone.should('be.visible')
     FormPage.phone.type(data.userData.phone)
     FormPage.phone.should('have.value', data.userData.phone)
