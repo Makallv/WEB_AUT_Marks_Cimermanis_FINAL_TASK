@@ -35,7 +35,7 @@ describe('Demoqa exam', () => {
         'aria-label', 'Choose Friday, February 28th, 1930').click()
     FormPage.birthDate.should('have.value', '28 Feb 1930')
     FormPage.subjects.should('be.visible')
-    FormPage.subjects.type('Economics {enter}')
+    FormPage.subjects.type('Economics{enter}')
     FormPage.hobbies.should('be.visible')
     FormPage.hobbies.contains('Music').click()
     FormPage.selectState.should('be.visible')
